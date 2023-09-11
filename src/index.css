@@ -1,0 +1,115 @@
+body {
+  font-family: 'Hubballi', cursive;
+  background-image: url(./images/weather-cheker.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1.6rem;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.4); 
+  padding: 1.5rem;
+  
+}
+header h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin:0;
+}
+.dos-columnas {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .dos-columnas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main {
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+.contenedor {
+  margin: 0 auto 2rem auto;
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  -webkit-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+.campo {
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+}
+.campo label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+
+}
+.campo input,
+.campo select {
+  all: unset;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  border-radius: 1rem;
+  padding: .5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ input[type="submit"] {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+}
+@keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
+ input[type="submit"]:hover {
+  background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.clima{
+  font-family: 'Inter', sans-serif;
+} 
+.clima p:first-of-type {
+  font-size: 3rem;
+  
+}
+.clima p {
+  text-align: center;
+  margin: 0;
+}
+.clima p span {
+  font-size: 2rem;
+}
